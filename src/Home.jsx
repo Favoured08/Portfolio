@@ -10,7 +10,7 @@ const Home = () => {
                 <button type="button" className="download-btn">Download Cv</button>
             </div>
             <div className="image">
-                <img src="assets/profilePicture.png" alt="profile picture" />
+                <img src="images/profilePicture.png" alt="profile picture" />
             </div>
         </div>
      );
