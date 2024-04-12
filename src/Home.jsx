@@ -1,6 +1,10 @@
-
+import NavBar from "./Nav";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faLinkedinIn, faXTwitter, faFontAwesome } from '@fortawesome/free-brands-svg-icons'
 const Home = () => {
     return ( 
+      <div>
+       <NavBar/>
         <div className="container">
             <div className="text">
                 <h1>I am <span className="name">Oluwaferanmi Adeosun</span>,<br></br>
@@ -13,11 +17,20 @@ const Home = () => {
             <div className="image">
                 <img 
                 src="images/Rectangle 2.png" alt="profile picture" />
-                <span className="circle"></span>
+                <span className="circle">
+              
+                </span>
             </div>
             <div className="social">
                 <p>Follow me on</p>
+                <hr></hr>
+                <FontAwesomeIcon icon={faFacebookF}/>
+                <FontAwesomeIcon icon={faLinkedinIn} />
+                <FontAwesomeIcon icon={faXTwitter} />
             </div>
+        </div>
+
+
         </div>
      );
 }
